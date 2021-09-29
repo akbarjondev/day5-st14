@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Fraunces';
+  src: url('../fonts/Fraunces-ExtraBold.woff2') format('woff2'),
+      url('../fonts/Fraunces-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('fonts/Fraunces-Regular.woff2') format('woff2'),
+      url('fonts/Fraunces-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", "Tahoma", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+/* works */
+.works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.works::before {
+  position: absolute;
+  top: 4%;
+  z-index: -1;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 1050px;
+  background-color: #fdd6ba;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  max-width: 285px;
+}
+
+.work::before {
+  order: -2;
+  content: "";
+  display: block;
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0E8784;
+  border-radius: 50px;
+  background-color: #ffffff;
+}
+
+.work__heading {
+  font-family: "Fraunces";
+  max-width: 255px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.work__step {
+  margin-top: 67px;
+  order: -1;
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
