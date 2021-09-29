@@ -1,0 +1,41 @@
+.collection {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+
+  &__item {
+    max-width: 255px;
+  }
+}
+
+.package {
+  text-align: center;
+
+  &::before {
+    content: "Birnarsa";
+  }
+
+  &__heading {
+    font-family: "Fraunces";
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 900;
+    color: #333d4b;
+    margin-bottom: 24px;
+  
+    &:hover {
+      color: red;   
+    }
+  }
+
+  &__text {
+    font-family: "Barlow";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333d4b;
+  }
+}

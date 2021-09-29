@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./../fonts/Fraunces-ExtraBold.woff2') format('woff2'),
+      url('./../fonts/Fraunces-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url('./../fonts/Fraunces-Regular.woff2') format('woff2'),
+      url('./../fonts/Fraunces-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

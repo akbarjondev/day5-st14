@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", "Tahoma", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url("./../fonts/Fraunces-ExtraBold.woff2") format("woff2"), url("./../fonts/Fraunces-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fraunces';
+  src: url("./../fonts/Fraunces-Regular.woff2") format("woff2"), url("./../fonts/Fraunces-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.collection__item {
+  max-width: 255px;
+}
+
+.package {
+  text-align: center;
+}
+
+.package::before {
+  content: "Birnarsa";
+}
+
+.package__heading {
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+  color: #333d4b;
+  margin-bottom: 24px;
+}
+
+.package__heading:hover {
+  color: red;
+}
+
+.package__text {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}
+
+.choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
